@@ -1,0 +1,26 @@
+{
+  "name": "tomascordero",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/killfrog47/tomascordero.git"
+  },
+  "author": "Tomas Cordero IV",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/killfrog47/tomascordero/issues"
+  },
+  "homepage": "https://github.com/killfrog47/tomascordero#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-cli": "^1.0.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-ruby-sass": "^2.0.6",
+    "gulp-sourcemaps": "^1.6.0"
+  }
+}
