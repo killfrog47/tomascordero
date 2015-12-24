@@ -16,9 +16,11 @@ $(function(){
 
 	$('.intro-box h1').hide().css('top', '0px').fadeIn(2000);
 
+	
+	
 	// setTimeout(function(){
 	// 	$('.intro-box h1').fadeOut(2000, function(){
-	// 		$('nav.navigation').fadeIn(500);
+	// 		$('nav.navigation').fadeIn(1000);
 	// 	})
 	// })
 })

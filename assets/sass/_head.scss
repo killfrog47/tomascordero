@@ -26,26 +26,54 @@ header {
 }
 nav.navigation {
 	height: 50px;
+	background: $blue;
+	color: $white;
+	display: none;
 	// position: fixed;
 	top: 0;
-	@include outer-container(95%);
+	@include outer-container(100%);
+	padding: 0 10px;
 	font-weight: 300;
 	.branding {
 		@include span-columns(4);
-		text-align: center;
-		span {
+		span.logo {
 			@include span-columns(1 of 4);
 			font-size: 2em;
 			line-height: 50px;
+			text-align: center;
+		}
+		span.logo-copy {
+			@include span-columns(3 of 4);
+			font-size: 1.25em;
+			line-height: 50px;
+			text-align: left;
 		}
 
 	}
 	.links {
 		@include span-columns(8);
+		line-height: 50px;
+		font-size: 1.25em;
 
 		.link {
 			@include span-columns(2 of 8);
 			text-align: center;
+			position: relative;
+			&:after {
+				display: block;
+				content: "";
+				position: absolute;
+				height: 5px;
+				width: 100%;
+				bottom: 0;
+				background: $blue;
+				transition: background $base-duration $base-timing;
+			}
+			&:hover {
+				&:after {
+					background: lighten($blue, 25%);
+				}
+			}
 		}
 	}
 }
