@@ -1,0 +1,51 @@
+header {
+	@include outer-container;
+	height: 100vh;
+	.intro-box {
+		@include span-columns(12);
+		@include shift(0);
+		position: relative;
+		// h2 {
+		// 	font-size: 8em;
+		// 	text-align: center;
+		// 	text-transform: uppercase;
+		// 	font-weight: 100;
+		// 	margin: 0;
+		// }
+		h1 {
+			font-size: 15em;
+			text-align: center;
+			// display: none;
+			position: relative;
+			top: -9999px;
+			text-transform: uppercase;
+			font-weight: 100;
+			margin: 0;
+		}
+	}
+}
+nav.navigation {
+	height: 50px;
+	// position: fixed;
+	top: 0;
+	@include outer-container(95%);
+	font-weight: 300;
+	.branding {
+		@include span-columns(4);
+		text-align: center;
+		span {
+			@include span-columns(1 of 4);
+			font-size: 2em;
+			line-height: 50px;
+		}
+
+	}
+	.links {
+		@include span-columns(8);
+
+		.link {
+			@include span-columns(2 of 8);
+			text-align: center;
+		}
+	}
+}
