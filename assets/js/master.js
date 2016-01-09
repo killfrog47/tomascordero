@@ -14,7 +14,7 @@ $(function(){
 
 	$('.intro-box').css('top', topCalc+'px');
 
-	$('.intro-box h1').hide().css('top', '0px').fadeIn(2000);
+	// $('.intro-box h1').hide().css('top', '0px').fadeIn(2000);
 
 	
 	

@@ -45,7 +45,7 @@ gulp.task('sass', function() {
 		.pipe(notify("Sass is done!"));
 });
 
-gulp.task('start:sass', function () {
+gulp.task('watch:sass', function () {
 	gulp.watch('./assets/sass/**/*.scss', ['sass']);
 });
 

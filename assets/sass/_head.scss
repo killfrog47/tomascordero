@@ -28,7 +28,7 @@ nav.navigation {
 	height: 50px;
 	background: $blue;
 	color: $white;
-	display: none;
+	display: block;
 	// position: fixed;
 	top: 0;
 	@include outer-container(100%);
