@@ -24,12 +24,21 @@ header {
 		}
 	}
 }
+.background {
+	position: fixed;
+	height: 100%;
+	width:100%;
+	background: url(../images/home-page/home-img-08.jpg) center;
+	z-index: 0;
+}
 nav.navigation {
 	height: 50px;
-	background: $blue;
 	color: $white;
 	display: block;
-	// position: fixed;
+	z-index: 99;
+	position: absolute;
+	width: 100%;
+	background: rgba(0,0,0,.5);
 	top: 0;
 	@include outer-container(100%);
 	padding: 0 10px;
@@ -59,21 +68,21 @@ nav.navigation {
 			@include span-columns(2 of 8);
 			text-align: center;
 			position: relative;
-			&:after {
-				display: block;
-				content: "";
-				position: absolute;
-				height: 5px;
-				width: 100%;
-				bottom: 0;
-				background: $blue;
-				transition: background $base-duration $base-timing;
-			}
-			&:hover {
-				&:after {
-					background: lighten($blue, 25%);
-				}
-			}
+			// &:after {
+			// 	display: block;
+			// 	content: "";
+			// 	position: absolute;
+			// 	height: 5px;
+			// 	width: 100%;
+			// 	bottom: 0;
+			// 	background: $blue;
+			// 	transition: background $base-duration $base-timing;
+			// }
+			// &:hover {
+			// 	&:after {
+			// 		background: lighten($blue, 25%);
+			// 	}
+			// }
 		}
 	}
 }
