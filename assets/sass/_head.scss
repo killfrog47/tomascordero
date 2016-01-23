@@ -28,8 +28,18 @@ header {
 	position: fixed;
 	height: 100%;
 	width:100%;
-	background: url(../images/home-page/home-img-08.jpg) center;
+	background-position: center;
+	background-repeat: no-repeat;
+	// background: url(../images/home-page/home-img-01.jpg) center;
 	z-index: 0;
+	
+	@include media($mobile) {
+		background-size: auto 100%;
+	}
+
+	img {
+		display: none;
+	}
 }
 nav.navigation {
 	height: 50px;
@@ -38,7 +48,8 @@ nav.navigation {
 	z-index: 99;
 	position: absolute;
 	width: 100%;
-	background: rgba(0,0,0,.5);
+	// background: rgba(0,0,0,1);
+	background: red;
 	top: 0;
 	@include outer-container(100%);
 	padding: 0 10px;

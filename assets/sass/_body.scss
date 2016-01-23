@@ -3,3 +3,57 @@
 	height: 150px;
 	
 }
+
+.container {
+	@include outer-container(100%);
+	height: 100%;
+	position: relative;
+	//about me page
+	.pic-of-me {
+		@include span-columns(6);
+		position: relative;
+		background: white;
+		min-height: 100%;
+
+		@include media($mobile) {
+			height: auto;
+			@include span-columns(12);
+			min-height: auto;
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+		img.my-face {
+			padding: 0px 50px;
+			border-radius: 50%;
+			position: relative;
+			margin-top: 25%;
+			@include media($mobile) {
+				margin-top: 0;
+			}
+		}
+	}
+	.bio {
+		@include span-columns(6);
+		background: black;
+		min-height: 100%;
+		text-align: center;
+		@include media($mobile) {
+			height: auto;
+			min-height: auto;
+			margin-top: 50px;
+			@include span-columns(12);
+		}
+		.copy{
+			@include span-columns(4 of 6);
+			@include shift(1);
+			color: white;
+			font-size: 18px;
+			position: relative;
+			@include media($mobile) {
+				padding: 20px 0;
+				@include span-columns(10 of 12);
+				@include shift(1);
+			}
+		}
+	}
+}

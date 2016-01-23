@@ -1,0 +1,22 @@
+$mobile: new-breakpoint(max-width 767px 12);
+	$mobile-small: new-breakpoint(min-device-width 320px max-device-height 480px orientation portrait 12);
+	$mobile-medium: new-breakpoint(min-width 375px max-width 480px 12);
+	$mobile-portrait: new-breakpoint(max-width 480px 12);
+	$mobile-landscape: new-breakpoint(min-width 481px max-width 767px 12);
+	$mobile-gap-closer: new-breakpoint(min-width 320px max-width 413px 12);
+	$mobile-iphone-five-down: new-breakpoint(min-width 320px max-width 374px 12);
+	$mobile-iphone-six-up: new-breakpoint(min-width 414px max-width 767px 12);
+
+$tablet: new-breakpoint(min-width 768px max-width 1024px 12);
+$tablet-xl: new-breakpoint(min-width 768px max-width 1199px 12);
+	$tablet-portrait: new-breakpoint(min-width 768px max-width 895px 12);
+	$tablet-landscape: new-breakpoint(min-width 896px max-width 1024px 12);
+	$tablet-landscape-up: new-breakpoint(min-width 896px 12);
+	$tablet-up: new-breakpoint(min-width 768px 12);
+
+$desktop: new-breakpoint(min-width 1025px max-width 1199px 12);
+$desktop-to-xl: new-breakpoint(min-width 1200px max-width 1400px 12);
+	$desktop-up: new-breakpoint(min-width 1025px 12);
+	$desktop-large: new-breakpoint(min-width 1200px 16);
+	$desktop-xl: new-breakpoint(min-width 1400px 16);
+

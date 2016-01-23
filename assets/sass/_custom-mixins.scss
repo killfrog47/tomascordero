@@ -1,4 +1,4 @@
-@import "compass/css3";
+// @import "compass/css3";
 
 /*  
 @mixin cover-background ()
@@ -20,4 +20,20 @@ $background-attachment: Defaults to "fixed" - allows you to specify background a
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;  
+}
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 }
