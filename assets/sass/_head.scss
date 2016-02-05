@@ -32,7 +32,7 @@ header {
 	background-repeat: no-repeat;
 	// background: url(../images/home-page/home-img-01.jpg) center;
 	z-index: 0;
-	
+
 	@include media($mobile) {
 		background-size: auto 100%;
 	}
@@ -48,26 +48,37 @@ nav.navigation {
 	z-index: 99;
 	position: absolute;
 	width: 100%;
-	// background: rgba(0,0,0,1);
-	background: red;
+	background: rgba(0,0,0,1);
+	// background: red;
 	top: 0;
 	@include outer-container(100%);
 	padding: 0 10px;
 	font-weight: 300;
 	.branding {
 		@include span-columns(4);
+		@include media($mobile) {
+			@include span-columns(8);
+		}
 		span.logo {
 			@include span-columns(1 of 4);
+
 			font-size: 2em;
 			line-height: 50px;
 			text-align: center;
+			@include media($mobile) {
+				@include span-columns(2 of 8);
+			}
 		}
 		span.logo-copy {
 			@include span-columns(3 of 4);
 			font-size: 1.25em;
 			line-height: 50px;
 			text-align: left;
+			@include media($mobile) {
+				@include span-columns(6 of 8);
+			}
 		}
+
 
 	}
 	.links {
@@ -96,4 +107,76 @@ nav.navigation {
 			// }
 		}
 	}
+	.mobile-hamburger {
+		display: block;
+		height: 50px;
+		width: 50px;
+		cursor: pointer;
+		position: absolute;
+		right: 10px;
+
+		&.active {
+			span {
+				background-color: transparent;
+				&:before {
+					transform: rotate(45deg);
+				}
+				&:after {
+					transform: rotate(-45deg);
+				}
+				&:before, &:after {
+					top: 0;
+				}
+			}
+
+		}
+		span {
+			top: 15px;
+			&:before {
+				top: 10px;
+			}
+			&:after {
+				bottom: 10px;
+			}
+		}
+		span {
+			top: 20px;
+			cursor: pointer;
+			border-radius: 1px;
+			height: 5px;
+			width: 35px;
+			background: white;
+			position: relative;
+			margin: 0 auto;
+			display: block;
+			content: '';
+			transition: all 150ms ease-in-out;
+			&:before {
+				top: 10px;
+				cursor: pointer;
+				border-radius: 1px;
+				height: 5px;
+				width: 35px;
+				background: white;
+				position: absolute;
+				display: block;
+				content: '';
+				transition: all 150ms ease-in-out;
+			}
+			&:after {
+				bottom: 10px;
+				cursor: pointer;
+				border-radius: 1px;
+				height: 5px;
+				width: 35px;
+				background: white;
+				position: absolute;
+				display: block;
+				content: '';
+				transition: all 150ms ease-in-out;
+			}
+		}
+
+	}
+
 }

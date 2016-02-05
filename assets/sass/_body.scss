@@ -1,13 +1,14 @@
 .intro {
 	position: absolute;
 	height: 150px;
-	
+
 }
 
 .container {
 	@include outer-container(100%);
 	height: 100%;
 	position: relative;
+	padding-top: 50px;
 	//about me page
 	.pic-of-me {
 		@include span-columns(6);
@@ -16,11 +17,12 @@
 		min-height: 100%;
 
 		@include media($mobile) {
-			height: auto;
+			height: 50%;
 			@include span-columns(12);
 			min-height: auto;
 			padding-top: 20px;
 			padding-bottom: 20px;
+
 		}
 		img.my-face {
 			padding: 0px 50px;
@@ -38,9 +40,8 @@
 		min-height: 100%;
 		text-align: center;
 		@include media($mobile) {
-			height: auto;
+			height: 50%;
 			min-height: auto;
-			margin-top: 50px;
 			@include span-columns(12);
 		}
 		.copy{
@@ -53,6 +54,7 @@
 				padding: 20px 0;
 				@include span-columns(10 of 12);
 				@include shift(1);
+				margin-top: 20px;
 			}
 		}
 	}

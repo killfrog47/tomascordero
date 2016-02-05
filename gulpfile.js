@@ -45,25 +45,25 @@ gulp.task('sass', function() {
 		.pipe(notify("Sass is done!"));
 });
 
-gulp.task('watch:sass', function () {
+gulp.task('dev', function () {
 	gulp.watch('./assets/sass/**/*.scss', ['sass']);
 });
 
-gulp.task('prod', function() {
-	return sass('./assets/sass/**/*.scss')
-		.on('error', sass.logError)
-		.pipe(sourcemaps.init())
-		.pipe(minifyCss())
-		.pipe(sourcemaps.write())
-		.pipe(gulp.dest('./assets/css'))
-		.pipe(notify("Switched to prod"));
-});
-
-gulp.task('dev', function() {
-	return sass('./assets/sass/**/*.scss')
-		.on('error', sass.logError)
-		.pipe(sourcemaps.init())
-		.pipe(sourcemaps.write())
-		.pipe(gulp.dest('./assets/css'))
-		.pipe(notify("Switched to prod"));
-})
+// gulp.task('prod', function() {
+// 	return sass('./assets/sass/**/*.scss')
+// 		.on('error', sass.logError)
+// 		.pipe(sourcemaps.init())
+// 		.pipe(minifyCss())
+// 		.pipe(sourcemaps.write())
+// 		.pipe(gulp.dest('./assets/css'))
+// 		.pipe(notify("Switched to prod"));
+// });
+//
+// gulp.task('dev', function() {
+// 	return sass('./assets/sass/**/*.scss')
+// 		.on('error', sass.logError)
+// 		.pipe(sourcemaps.init())
+// 		.pipe(sourcemaps.write())
+// 		.pipe(gulp.dest('./assets/css'))
+// 		.pipe(notify("Switched to prod"));
+// })
