@@ -5,7 +5,7 @@ $(window).resize(function() {
 
 	$('.intro-box').css('top', topCalc+'px');
 });
-var backgrounds = ['home-img-01.jpg','home-img-02.jpg','home-img-03.jpg','home-img-04.jpg','home-img-05.jpg','home-img-06.jpg','home-img-07.jpg','home-img-08.jpg'];
+var backgrounds = ['home-img-02.jpg','home-img-03.jpg','home-img-04.jpg','home-img-05.jpg','home-img-06.jpg','home-img-07.jpg','home-img-08.jpg','home-img-01.jpg'];
 
 function change_bg(counter){
 	var new_bg = backgrounds[counter];
@@ -68,7 +68,7 @@ $(function(){
 		logoHeight = $('.intro-box').height(),
 		topCalc = (headerHeight / 2) - (logoHeight / 2);
 
-	
+
 
 	// $('.background img').eq(0).addClass('active');
 
@@ -78,7 +78,7 @@ $(function(){
 	// if($('body').hasClass('page-loaded')){
 	// 	change_bg(0);
 	// }
-	
+
 	// setTimeout(function(){
 	// 	$('.intro-box h1').fadeOut(2000, function(){
 	// 		$('nav.navigation').fadeIn(1000);

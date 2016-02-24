@@ -18,7 +18,7 @@
 	<div class="background">
 
 	</div>
-	<nav class="navigation">
+	<!-- <nav class="navigation">
 		<div class="branding"><span class="logo">IV</span> <span class="logo-copy">Tomas Cordero</span></div>
 		<div class="links">
 			<a href="/"><div class="link">Home</div></a>
@@ -26,10 +26,42 @@
 			<a href="/photography/"><div class="link">Photography</div></a>
 			<a href="/projects/"><div class="link">Projects</div></a>
 		</div>
-	</nav>
-
+	</nav> -->
+	<div class="container">
+		<div class="web-dev">
+			<div class="copy-container">
+				<h2>Web Development</h2>
+			</div>
+		</div>
+		<div class="me">
+			<div class="copy-container">
+				<h1>Tomas Cordero</h1>
+				<img src="/assets/images/me.jpg" alt="Tomas Enrique Cordero IV" class="center-block my-face" />
+				<!-- <p class="copy">Web Developer<p> -->
+				<!-- <p class="copy">Photographer<p> -->
+			</div>
+		</div>
+		<div class="photography">
+			<div class="copy-container">
+				<h2>Photography</h2>
+			</div>
+		</div>
+	</div>
 	<footer>
-		
+
 	</footer>
 </body>
+<script>
+	$(function(){
+		var windowHeight = $(window).height(),
+			halfCalc = windowHeight / 2,
+			imageOfMeHeight = $('img.my-face').height(),
+			copyHeight = $('.copy-container').height();
+		if($(window).width() > 767){
+			// $('.container .me .copy-container').css('margin-top', '-' + copyHeight / 2 + 'px');
+		}else{
+			// $('.container .me .copy-container').css('margin-top', '');
+		}
+	})
+</script>
 </html>

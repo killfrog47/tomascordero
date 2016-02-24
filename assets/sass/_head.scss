@@ -30,7 +30,7 @@ header {
 	width:100%;
 	background-position: center;
 	background-repeat: no-repeat;
-	// background: url(../images/home-page/home-img-01.jpg) center;
+	background: url(../images/home-page/home-img-01.jpg) center;
 	z-index: 0;
 
 	@include media($mobile) {

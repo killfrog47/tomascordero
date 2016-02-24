@@ -18,11 +18,11 @@
 				imageOfMeHeight = $('img.my-face').height(),
 				copyHeight = $('p.copy').height();
 			if($(window).width() > 767){
-				$('.container .pic-of-me img').css('margin-top', (halfCalc - (imageOfMeHeight / 2))+'px');
-				$('.container .bio .copy').css('margin-top', (halfCalc - (copyHeight / 2))+'px');
+				$('.container .pic-of-me img').css('margin-top', '-' + (imageOfMeHeight / 2) + 'px');
+				$('.container .bio .copy-container').css('margin-top', (halfCalc - (copyHeight / 2))+'px');
 			}else{
 				$('.container .pic-of-me img').css('margin-top', '');
-				$('.container .bio .copy').css('margin-top', '');
+				$('.container .bio .copy-container').css('margin-top', '');
 			}
 		});
 	</script>
@@ -43,10 +43,17 @@
 	</nav>
 	<div class="container">
 		<div class="bio">
-			<p class="copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni dignissimos similique dolorem! Adipisci sunt veritatis omnis, temporibus officia porro! Officia omnis nemo nisi quas magnam id, fugiat ex dolorem.</p>
+			<div class="copy-container">
+
+				<h1>Tomas Cordero</h1>
+				<p class="copy">Web Developer<p>
+				<p class="copy">Photographer<p>
+			</div>
 		</div>
 		<div class="pic-of-me">
-			<img src="/assets/images/me.jpg" alt="Tomas Enrique Cordero IV" class="center-block my-face" />
+			<div class="img-container">
+				<img src="/assets/images/me.jpg" alt="Tomas Enrique Cordero IV" class="center-block my-face" height="500" width="500"/>
+			</div>
 		</div>
 	</div>
 	<footer>
@@ -60,11 +67,12 @@
 				imageOfMeHeight = $('img.my-face').height(),
 				copyHeight = $('p.copy').height();
 			if($(window).width() > 767){
-				$('.container .pic-of-me img').css('margin-top', (halfCalc - (imageOfMeHeight / 2))+'px');
-				$('.container .bio .copy').css('margin-top', (halfCalc - (copyHeight / 2))+'px');
+				$('.container .pic-of-me img').css('margin-top', '-' + (imageOfMeHeight / 2) + 'px');
+				// $('.container .pic-of-me img').css('margin-top', (halfCalc - (imageOfMeHeight / 2))+'px');
+				$('.container .bio .copy-container').css('margin-top', (halfCalc - (copyHeight / 2))+'px');
 			}else{
 				$('.container .pic-of-me img').css('margin-top', '');
-				$('.container .bio .copy').css('margin-top', '');
+				$('.container .bio .copy-container').css('margin-top', '');
 			}
 		})
 	</script>
