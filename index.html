@@ -1,67 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset=utf-8>
 	<title>Tomas Cordero</title>
-	<link rel="stylesheet" href="/assets/css/stylesheet.css">
-
-	<script src="/assets/js/jquery.js"></script>
-	<script src="/assets/js/PxLoader.js"></script>
-	<script src="/assets/js/PxLoaderImage.js"></script>
-	<script src="/assets/js/master.js"></script>
-
-
+	<link rel="stylesheet" href="/assets/css/stylesheet.css" media="screen" charset="utf-8">
 </head>
 <body>
-	<div class="background">
+	<nav class="navigation">
+		<div class="logo"><h1>Tomas Cordero</h1></div>
+		<ul>
+			<li><a href="/about-me">About Me</a></li>
+			<li><a href="/portfolio">Portfolio</a></li>
+			<li><a href="/contact-me">Contact Me</a></li>
+		</ul>
+	</nav>
+	<header>
 
-	</div>
-	<!-- <nav class="navigation">
-		<div class="branding"><span class="logo">IV</span> <span class="logo-copy">Tomas Cordero</span></div>
-		<div class="links">
-			<a href="/"><div class="link">Home</div></a>
-			<a href="/about-me/"><div class="link">About Me</div></a>
-			<a href="/photography/"><div class="link">Photography</div></a>
-			<a href="/projects/"><div class="link">Projects</div></a>
-		</div>
-	</nav> -->
-	<div class="container">
-		<div class="web-dev">
-			<div class="copy-container">
-				<h2>Web Development</h2>
-			</div>
-		</div>
-		<div class="me">
-			<div class="copy-container">
-				<h1>Tomas Cordero</h1>
-				<img src="/assets/images/me.jpg" alt="Tomas Enrique Cordero IV" class="center-block my-face" />
-				<!-- <p class="copy">Web Developer<p> -->
-				<!-- <p class="copy">Photographer<p> -->
-			</div>
-		</div>
-		<div class="photography">
-			<div class="copy-container">
-				<h2>Photography</h2>
-			</div>
-		</div>
-	</div>
-	<footer>
+	</header>
 
-	</footer>
+
 </body>
-<script>
-	$(function(){
-		var windowHeight = $(window).height(),
-			halfCalc = windowHeight / 2,
-			imageOfMeHeight = $('img.my-face').height(),
-			copyHeight = $('.copy-container').height();
-		if($(window).width() > 767){
-			// $('.container .me .copy-container').css('margin-top', '-' + copyHeight / 2 + 'px');
-		}else{
-			// $('.container .me .copy-container').css('margin-top', '');
-		}
-	})
-</script>
 </html>

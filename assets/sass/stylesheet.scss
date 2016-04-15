@@ -4,20 +4,6 @@
 @import "grid-settings";
 @import "custom-mixins";
 @import "global";
-
-html {
-	min-height: 100%;
-}
-
-body, html {
-	width: 100%;
-	padding: 0;
-	height: 100%;
-	margin: 0;
-	font-family: $roboto;
-	background: black;
-}
-
 @import "head";
 @import "body";
 @import "footer";
